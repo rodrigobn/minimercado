@@ -4,7 +4,7 @@ Este projeto é um site simples de **minimercado online**, desenvolvido em HTML 
 
 ## 🌐 Acesse o site
 O projeto está publicado no **GitHub Pages** e pode ser acessado em:  
-👉 [Clique aqui para acessar o site](https://SEU_USUARIO.github.io/NOME_DO_REPOSITORIO)
+👉 [Clique aqui para acessar o site](https://rodrigobn.github.io/minimercado/index.html)
 
 ---
 
@@ -30,19 +30,6 @@ O projeto está publicado no **GitHub Pages** e pode ser acessado em:
 ### ❓ Página de Ajuda
 - Explicações sobre como navegar e utilizar o site.
 - Guia simples para o usuário.
-
----
-
-## 🗂️ Estrutura do Projeto
-
-/
-├── index.html # Página inicial
-├── produtos.html # Listagem de produtos
-├── servicos.html # Página de serviços
-├── contato.html # Página de contato
-├── ajuda.html # Página de ajuda
-├── imagens/ # Pasta com imagens usadas no site
-└── style.css # Estilos da página
 
 ---
 
