@@ -50,9 +50,14 @@ img {
 
 /* Carrossel customizado */
 .carousel-item img {
-	max-height: 320px;
-	object-fit: cover;
+	max-height: 220px;
+	width: auto;
+	object-fit: contain;
 	margin: 0 auto;
+	background: transparent;
+	border-radius: 8px;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+	display: block;
 }
 
 /* Formulário de cadastro */
@@ -93,7 +98,11 @@ img {
 	main {
 		padding: 12px 4px;
 	}
-	.carousel-item img {
+	.carousel-item {
+		min-height: 100px;
 		max-height: 180px;
+	}
+	.carousel-item img {
+		max-height: 100px;
 	}
 }
