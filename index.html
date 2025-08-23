@@ -1,51 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Minimercado Bom Preço</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Minimercado Bom Preço</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Minimercado Bom Preço</h1>
-        <nav>
-            <a href="index.html">🏠 Início</a> |
-            <a href="produtos.html">🛒 Produtos</a> |
-            <a href="servicos.html">🔧 Serviços</a> |
-            <a href="ajuda.html">❓ Ajuda</a>
-        </nav>
-        <hr>
-    </header>
+        <header>
+                <h1>Minimercado Bom Preço</h1>
+                <nav>
+                        <a href="index.html">🏠 Início</a> |
+                        <a href="produtos.html">🛒 Produtos</a> |
+                        <a href="servicos.html">🔧 Serviços</a> |
+                        <a href="cadastro.html">📝 Cadastro</a> |
+                        <a href="ajuda.html">❓ Ajuda</a>
+                </nav>
+        </header>
 
-    <main>
-        <h2>Bem-vindo ao nosso minimercado!</h2>
-        <p>Qualidade, economia e praticidade para o seu dia a dia.</p>
-        
-        <h3>Produtos em destaque</h3>
-        <ul>
-            <li>
-                <img src="imagens/arroz.jpeg" width="150">
-                <p>Arroz Branco 5kg</p>
-                <p>R$ 25,00</p>
-            </li>
-            <li>
-                <img src="imagens/feijao.jpeg" width="150">
-                <p>Feijão Carioca 1kg</p>
-                <p>R$ 8,00</p>
-            </li>
-        </ul>
+        <main>
+                <div class="mb-4 text-end text-secondary">
+                        <span id="dataHora"></span>
+                </div>
+                <h2 class="mb-4">Bem-vindo ao nosso minimercado!</h2>
+                <p>Qualidade, economia e praticidade para o seu dia a dia.</p>
 
-        <h3>Nossos serviços</h3>
-        <ul>
-            <li>Entrega em domicílio - R$ 5,00</li>
-            <li>Recarga de celular - a partir de R$ 10,00</li>
-        </ul>
-    </main>
+                <!-- Carrossel Bootstrap -->
+                <div id="carouselProdutos" class="carousel slide my-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagens/arroz.jpeg" class="d-block w-100" alt="Arroz Branco 5kg - pacote de arroz branco">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                <h5>Arroz Branco 5kg</h5>
+                                <p>R$ 25,00</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagens/feijao.jpeg" class="d-block w-100" alt="Feijão Carioca 1kg - pacote de feijão">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                <h5>Feijão Carioca 1kg</h5>
+                                <p>R$ 8,00</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagens/coca.jpeg" class="d-block w-100" alt="Refrigerante Cola 2L - garrafa de refrigerante">
+                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                <h5>Refrigerante Cola 2L</h5>
+                                <p>R$ 9,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProdutos" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProdutos" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
 
-    <footer>
-        <hr>
-        <p>© 2025 Minimercado Bom Preço | Desenvolvido por Rodrigo Brito</p>
-        <p>Contato: contato@bompreco.com | Tel: (99) 99999-9999</p>
-    </footer>
+                <h3>Produtos em destaque</h3>
+                <ul class="row">
+                        <li class="col-md-6 mb-3">
+                                <img src="imagens/arroz.jpeg" width="150" alt="Arroz Branco 5kg - pacote de arroz branco">
+                                <p>Arroz Branco 5kg</p>
+                                <p>R$ 25,00</p>
+                        </li>
+                        <li class="col-md-6 mb-3">
+                                <img src="imagens/feijao.jpeg" width="150" alt="Feijão Carioca 1kg - pacote de feijão">
+                                <p>Feijão Carioca 1kg</p>
+                                <p>R$ 8,00</p>
+                        </li>
+                </ul>
 
+                <h3>Nossos serviços</h3>
+                <ul>
+                        <li>Entrega em domicílio - R$ 5,00</li>
+                        <li>Recarga de celular - a partir de R$ 10,00</li>
+                </ul>
+        </main>
+
+        <footer>
+                <p>© 2025 Minimercado Bom Preço | Desenvolvido por Rodrigo Brito</p>
+                <p>Contato: contato@bompreco.com | Tel: (99) 99999-9999</p>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
 </body>
 </html>

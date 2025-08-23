@@ -1,0 +1,99 @@
+
+/* ====== Estilos customizados para o Minimercado ====== */
+
+body {
+	background-color: #f8f9fa;
+	font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+header, footer {
+	background-color: #007bff;
+	color: #fff;
+	padding: 16px 0;
+	text-align: center;
+}
+
+nav a {
+	color: #fff;
+	margin: 0 8px;
+	text-decoration: none;
+	font-weight: 500;
+}
+nav a:hover {
+	text-decoration: underline;
+}
+
+main {
+	margin: 32px auto;
+	max-width: 900px;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+	padding: 32px 24px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	margin-bottom: 24px;
+}
+
+img {
+	border-radius: 8px;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+	max-width: 100%;
+	height: auto;
+}
+
+/* Carrossel customizado */
+.carousel-item img {
+	max-height: 320px;
+	object-fit: cover;
+	margin: 0 auto;
+}
+
+/* Formulário de cadastro */
+.form-section {
+	background: #e9ecef;
+	border-radius: 8px;
+	padding: 24px;
+	margin-bottom: 32px;
+}
+
+.form-label {
+	font-weight: 500;
+}
+
+.form-control:focus {
+	border-color: #007bff;
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.btn-primary {
+	background-color: #007bff;
+	border: none;
+}
+.btn-primary:hover {
+	background-color: #0056b3;
+}
+
+/* Mensagem temporária */
+.alert-temp {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 9999;
+	min-width: 220px;
+}
+
+@media (max-width: 600px) {
+	main {
+		padding: 12px 4px;
+	}
+	.carousel-item img {
+		max-height: 180px;
+	}
+}
